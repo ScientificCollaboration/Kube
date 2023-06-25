@@ -15,7 +15,7 @@ COPY ./requirements.txt /code/requirements.txt
 RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
 # 
-DOCKER LOGIN localhost:8888
+DOCKER LOGIN localhost:4444
 #COPY ./app /app
 ENTRYPOINT ["uvicorn", "app:app","--reload", "--host", "127.0.0.0", "--port", "8888"]]
 # 
